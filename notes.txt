@@ -1,0 +1,43 @@
+users:
+	id
+	username
+	password
+	firstname
+	lastname
+	token
+	mode
+	
+tickets:
+	id
+	subject
+	body
+	status
+	date
+	user
+	
+responses:
+	id
+	ticketID
+	body
+
+codes:
+	1XX: succes
+	2XX: error
+	3XX: defaulthandler
+
+	100: successful signup
+	101: successful login
+	102: successful logout
+	103: successful promote
+	104: successful sending ticket
+	105: successful changing status
+	106: successful closing ticket
+	107: successful response
+
+	200: user exist (for signup)
+	201: wrong password (for login)
+	202: wrong username or token (for logout)
+	203: already admin (for promote)
+	204: not authorized
+	205: ticket not found! (for response)
+	206: already login (for login)
